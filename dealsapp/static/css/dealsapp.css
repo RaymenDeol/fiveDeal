@@ -1,0 +1,18 @@
+h1.main_header {
+    text-align: center;
+    color: red;
+}
+
+
+.row {
+    margin: 25 0 25 0px;
+    text-align: center;
+}
+
+.col-sm-4 {
+    margin: 10 0 10 0px;
+}
+
+.box {
+    border: 1px solid black;
+}

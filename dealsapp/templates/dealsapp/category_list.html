@@ -1,0 +1,41 @@
+{% load staticfiles %}
+
+<html>
+
+<head>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="{% static 'css/dealsapp.css' %}" rel="stylesheet">
+</head>
+{{ store_names }}
+{{ categories }}
+<body>
+    <div class="page-header">
+        <h1 class="main_header">Five Deal Locator <small>What are the top 5 deals in Abbotsford right now? </small></h1>
+    </div>
+    {{ prices }}
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="box">{{ items.0 }} <br> {{ item_prices.0.price }} <br> {{ store_names.0.store_name }}</div>
+            </div>
+            <div class="col-sm-4">
+                <div class="box">{{ items.1 }} <br> {{ item_prices.1.price }}</div>
+            </div>
+            <div class="col-sm-4">
+                <div class="box">{{ items.2 }} <br> {{ item_prices.2.price }}</div>
+            </div>
+            <div class="col-sm-4">
+                <div class="box">{{ items.3 }} <br> {{ item_prices.3.price }}</div>
+            </div>
+            <div class="col-sm-4">
+                <div class="box">{{ items.4 }} <br> {{ item_prices.4.price }}</div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+
+</html>
